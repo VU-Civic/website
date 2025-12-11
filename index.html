@@ -29,18 +29,81 @@
   <section class="banner-container">
     <img src="assets/civicAlertBackgroundGradient1080.png" alt="Banner Image" class="banner-image">
     <div class="banner-text">
-      <p>This project aims to deploy a community-based acoustic gunshot alert system in Austin, TX, using inexpensive sensors and AI to detect and localize gunfire. Alerts are sent to residents via an app, allowing them to engage with law enforcement or gain peace of mind. The system aggregates data from multiple sensors to pinpoint shot locations, improving incident reporting and response times. By assessing its impact on public safety, community attitudes, and law enforcement call efficiency, the project seeks to provide a scalable, affordable model for other communities affected by gun violence.</p>
+      <p>The <strong>Civic Alert</strong> project links community engagement with advanced technology to address gun violence. By deploying a network of inexpensive, resident-hosted acoustic sensors, we provide a scalable, community-controlled solution for detecting and localizing illegal gunfire. In partnership with the North Austin Civic Association (NACA), this pilot empowers residents with real-time information, improving safety, peace of mind, and the effectiveness of law enforcement response.</p>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section class="steps-container">
+    <h2 class="section-title" style="width: 100%;">How It Works</h2>
+    <div class="step-card">
+      <div class="step-number">1</div>
+      <h3 class="step-title">Community Sensing</h3>
+      <p class="step-description">Residents host small, privacy-preserving acoustic sensors that simply plug into a standard outlet. These sensors detect loud impulsive sounds like gunfire while ignoring normal street noise.</p>
+    </div>
+    <div class="step-card">
+      <div class="step-number">2</div>
+      <h3 class="step-title">Intelligent Verification</h3>
+      <p class="step-description">Potential detections are securely analyzed using machine learning to filter out fireworks and backfires. Data from multiple sensors is fused to pinpoint the exact location.</p>
+    </div>
+    <div class="step-card">
+      <div class="step-number">3</div>
+      <h3 class="step-title">Instant Alerts</h3>
+      <p class="step-description">Qualified alerts are immediately sent to community members via the mobile app, empowering residents with real-time safety information and peace of mind.</p>
     </div>
   </section>
   <!-- Feature Section One -->
   <section class="feature-container" id="feature">
-    <h2 class="feature-title">Mobile App-Based Monitoring and Alerts</h2>
+    <div style="flex: 1;">
+      <h2 class="feature-title">Mobile App-Based Monitoring and Alerts</h2>
+      <p style="font-size: 18px; line-height: 1.6; color: #555; margin-top: 20px;">
+        Receive instant notifications when gunfire is detected in your neighborhood. The app provides real-time information, allowing you to make informed decisions and enhancing community situational awareness.
+      </p>
+    </div>
     <img src="assets/iphoneMockupV3.png" alt="Mobile App" class="feature-image">
   </section>
   <!-- Feature Section 2 -->
   <section class="feature-container" id="feature-2">
     <h2 class="feature-title">Crowd-Sourced Localization</h2>
     <img src="assets/civicAlertCircles.png" alt="Analytics Dashboard" class="feature-image" id="feature-image2">
+    <div style="flex: 1;">
+       <p style="font-size: 18px; line-height: 1.6; color: #555; margin-top: 20px;">
+        Our system uses a distributed network of sensors to triangulate the source of gunfire with high precision. By fusing data from multiple community-hosted devices, we can distinguish between actual threats and false alarms, providing reliable data to residents and first responders.
+      </p>
+    </div>
+  </section>
+
+  <!-- Privacy Section -->
+  <section class="privacy-container">
+    <div class="privacy-content">
+      <h2 class="section-title" style="color: white;">Privacy & Community Trust</h2>
+      <p style="font-size: 18px; margin-bottom: 30px;">Designed ensuring resident privacy and control.</p>
+      <div class="privacy-grid">
+        <div class="privacy-item">
+          <h3>Privacy First</h3>
+          <p>No continuous audio recording. The system only processes audio on-device and transmits short, encrypted evidence clips only when a gunshot is positively detected.</p>
+        </div>
+        <div class="privacy-item">
+          <h3>Community Owned</h3>
+          <p>Unlike other systems, this project is community-centered. Residents host the sensors and own the data, fostering trust and transparency.</p>
+        </div>
+        <div class="privacy-item">
+          <h3>Secure Technology</h3>
+          <p>Utilizing Thingstream IoT connectivity and AWS cloud infrastructure ensures reliable, secure, and fast data transmission without accessing your home WiFi.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Civic Partnerships -->
+  <section class="partners-container">
+    <h2 class="partners-title">Our Civic Partnerships</h2>
+    <div class="partners-list">
+      <div class="partner-name">North Austin Civic Association</div>
+      <div class="partner-name">Austin Police Department</div>
+      <div class="partner-name">Austin City Council District 4</div>
+      <div class="partner-name">Vanderbilt University</div>
+    </div>
   </section>
   <!--Feature Section Mirror -->
   <!-- <section class="feature-container mirror" id="feature2">
