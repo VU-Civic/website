@@ -9,6 +9,7 @@
   --surface-color: #FFFFFF;
   --text-color: #333333;
   --text-muted: #666666;
+  --footer-height: 46px;
   --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
   --shadow-md: 0 6px 15px rgba(0, 0, 0, 0.08);
   --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.12);
@@ -128,7 +129,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 120px 20px 60px;
+  padding: 140px 20px 40px;
   background: radial-gradient(circle at top right, #eef2ff 0%, #ffffff 50%);
   text-align: center;
   flex-direction: column;
@@ -149,7 +150,7 @@ ul {
 
 .hero-slogan {
   font-size: clamp(40px, 8vw, 72px);
-  line-height: 1.1;
+  line-height: 1.2;
   font-weight: 800;
   background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
   -webkit-background-clip: text;
@@ -172,7 +173,7 @@ ul {
   font-size: clamp(18px, 4vw, 24px);
   color: var(--text-muted);
   max-width: 500px;
-  margin: 0 auto 40px;
+  margin: 0 auto;
 }
 
 /* Animation */
@@ -580,6 +581,7 @@ ul {
   justify-content: center;
   gap: 40px;
   flex-wrap: wrap;
+  height: var(--footer-height);
 }
 
 .footer-item {
@@ -753,4 +755,16 @@ ul {
 .btn-email:hover {
   background-color: #f0f4ff;
   text-decoration: none;
+}
+
+/* App Login */
+.app-container {
+  min-height: calc(100vh - var(--footer-height));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at top right, #eef2ff 0%, #ffffff 50%);
+  text-align: center;
+  flex-direction: column;
+  padding-top: 40px;
 }

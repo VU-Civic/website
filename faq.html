@@ -14,12 +14,16 @@
 <body>
    <nav class="navbar">
       <div class="logo">
-         <a href="index.html#hero"><img src="assets/civicAlertTxtBlue.svg" alt="Civic Alert"></a>
+         <a href="index.html">
+            <img src="assets/civicAlertLogoNoText.png" alt="Logo">
+            <img src="assets/civicAlertTxtBlue.svg" alt="Civic Alert">
+         </a>
       </div>
       <ul class="nav-menu">
          <li class="nav-item"><a href="team.html">The Team</a></li>
          <li class="nav-item"><a href="faq.html">FAQ</a></li>
          <li class="nav-item"><a href="contact.html">Contact Us</a></li>
+         <li class="nav-item"><a href="app.html">App Login</a></li>
       </ul>
       <div class="hamburger">
          <span></span>
@@ -37,48 +41,62 @@
 
       <div class="faq-container">
          <div class="faq-item">
-            <h3 class="faq-question">Will this increase police presence in our neighborhood?</h3>
+            <h3 class="faq-question">Will this system increase police presence in my neighborhood?</h3>
             <p class="faq-answer">No. The system supports community-initiated reporting rather than automatic police
-               dispatch. You decide when and if to call police.</p>
+               dispatch. While law enforcement agents may themselves decide to sign up for the service and subscribe to
+               alerts, this system does not integrate with any police dispatch systems, automated or otherwise, and it
+               is still up to you to decide when and if to call the police.</p>
          </div>
 
          <div class="faq-item">
-            <h3 class="faq-question">What about privacy concerns?</h3>
-            <p class="faq-answer">The system only processes audio locally on each device and transmits only short,
-               encrypted evidence clips when a gunshot is positively detected. No continuous recording or surveillance
-               ever occurs, and no personally identifiable information is ever stored on or transmitted from the device.
+            <h3 class="faq-question">Should I be concerned about the privacy of my data?</h3>
+            <p class="faq-answer">Any sensor you host processes audio locally on the device itself and only transmits
+               data when a gunshot is positively detected. A data packet contains only a short, encrypted evidence clip,
+               an estimate of the time that the event was detected, and the current GPS location of the device. No
+               continuous recording or audio surveillance ever occurs, and no personally identifiable information is
+               ever stored on or transmitted from the device. In fact, there is no mechanism to remotely log into a
+               device or to monitor its audio stream at all. Additionally, the audio data only exists for the short
+               number of milliseconds needed for processing, making it inaccessible to intruders, even in the case that
+               a device gets stolen.
             </p>
          </div>
 
          <div class="faq-item">
-            <h3 class="faq-question">What sort of security measures are in place?</h3>
-            <p class="faq-answer">The system uses a combination of encryption and authentication to ensure secure
-               transmission of data. Additionally, all network data is transmitted over a dedicated cellular channel
-               that is unable to process regular internet data or communicate with non-CivicAlert devices.</p>
+            <h3 class="faq-question">What sort of security measures are in place for transmitted data?</h3>
+            <p class="faq-answer">The system uses a combination of enterprise-grade encryption and authentication
+               mechanisms to ensure secure transmission of data. Additionally, all network data is transmitted over a
+               dedicated cellular channel that is unable to process voice data, texts, or regular internet traffic, and
+               the network is also unable to communicate with non-CivicAlert devices.</p>
          </div>
 
          <div class="faq-item">
             <h3 class="faq-question">How accurate is the system?</h3>
-            <p class="faq-answer">Based on existing research: 96% correct classification rate, 0.4% false positive rate,
-               and ~15-yard location accuracy.</p>
+            <p class="faq-answer">Based on in-house testing, the system has an approximately 96% correct
+               classification rate, a 0.4% false positive rate, and ~10-yard of location accuracy. These numbers may
+               vary significantly, however, based on the environment and the type of gunfire taking place.</p>
          </div>
 
          <div class="faq-item">
-            <h3 class="faq-question">What about false positives?</h3>
-            <p class="faq-answer">The system uses advanced AI to filter out false positives and only transmit evidence
-               clips when a gunshot is positively detected.</p>
+            <h3 class="faq-question">How likely is the system to report false positives?</h3>
+            <p class="faq-answer">The system uses advanced AI techniques to filter out false positives and only transmit
+               evidence clips when a gunshot is positively detected. It is particularly effective against most natural
+               and man-made sounds; however, false positives are still possible in some cases, primarily in the presence
+               of fireworks. We are working on ways to further improve the system's accuracy in these difficult cases.
+            </p>
          </div>
 
          <div class="faq-item">
-            <h3 class="faq-question">What does it cost?</h3>
+            <h3 class="faq-question">What does the system cost?</h3>
             <p class="faq-answer">The pilot program is free for participants. Future sustainability will depend on
-               community support and potential city funding.</p>
+               community support, follow-on project grants, and potential city funding.</p>
          </div>
 
          <div class="faq-item">
             <h3 class="faq-question">Do I need technical skills to participate?</h3>
-            <p class="faq-answer">No. The sensors plug directly into standard outdoor electrical outlets. Our community
-               volunteers provide support for any technical questions.</p>
+            <p class="faq-answer">No. The sensors plug directly into standard outdoor electrical outlets and require no
+               additional setup or configuration. Access to the system is provided via either a mobile or web app, which
+               you will be able to download and access in the same way you access any other internet resource. Our
+               community volunteers will provide support for any technical questions.</p>
          </div>
       </div>
    </section>
