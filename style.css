@@ -33,6 +33,11 @@ body {
   overflow-x: hidden;
 }
 
+iframe {
+  min-height: calc(100vh - var(--footer-height) - var(--nav-height) - 120px);
+  max-width: 100%;
+}
+
 a {
   text-decoration: none;
   color: inherit;
