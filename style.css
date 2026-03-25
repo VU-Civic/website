@@ -77,6 +77,19 @@ ul {
   color: var(--accent-color);
 }
 
+.nav-item-emph {
+  background-color: var(--accent-color);
+  padding: 8px 20px;
+  border-radius: 50px;
+}
+
+.nav-item-emph a {
+  font-weight: 600;
+  color: var(--bg-color);
+  font-size: 16px;
+  position: relative;
+}
+
 .nav-logo {
   height: 40px;
   width: auto;
@@ -599,6 +612,7 @@ ul {
   margin: 100px auto 20px;
   padding: 20px;
   background: white;
+  min-height: calc(100vh - var(--footer-height) - var(--nav-height) - 40px);
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-sm);
 }
