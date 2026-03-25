@@ -77,17 +77,18 @@ ul {
   color: var(--accent-color);
 }
 
-.nav-item-emph {
+.nav-item .nav-item-emph {
+  color: var(--bg-color);
   background-color: var(--accent-color);
   padding: 8px 20px;
   border-radius: 50px;
+  cursor: pointer;
 }
 
-.nav-item-emph a {
-  font-weight: 600;
+.nav-item .nav-item-emph:hover {
   color: var(--bg-color);
-  font-size: 16px;
-  position: relative;
+  background-color: var(--email-hover);
+  transition: background-color 0.3s, transform 0.3s;
 }
 
 .nav-logo {
