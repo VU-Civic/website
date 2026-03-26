@@ -649,6 +649,11 @@ ul {
   color: var(--primary-color);
 }
 
+.legal-text a {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
 /* Responsive Overrides */
 @media (max-width: 768px) {
   .hero-slogan {
