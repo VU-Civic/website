@@ -48,6 +48,10 @@ ul {
   list-style: none;
 }
 
+td {
+  padding: 0px 10px;
+}
+
 /* ===== NAVIGATION ===== */
 .navbar {
   height: var(--nav-height);
