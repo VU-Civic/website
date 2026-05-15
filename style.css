@@ -146,6 +146,11 @@ td {
   }
 }
 
+.explicit-link {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
 /* ===== HERO SECTION ===== */
 .hero-container {
   min-height: 100vh;
@@ -196,6 +201,13 @@ td {
   font-size: clamp(18px, 4vw, 24px);
   color: var(--text-muted);
   max-width: 500px;
+  margin: 0 auto;
+}
+
+.hero-subtitle2 {
+  font-size: clamp(18px, 4vw, 24px);
+  color: var(--text-muted);
+  max-width: 800px;
   margin: 0 auto;
 }
 
