@@ -199,6 +199,26 @@ td {
   margin: 0 auto;
 }
 
+.hero-cta-btn {
+  display: inline-block;
+  margin-top: 40px;
+  padding: 18px 48px;
+  background-color: var(--accent-color);
+  color: #F8F9FA;
+  font-size: clamp(18px, 3vw, 22px);
+  font-weight: 700;
+  border-radius: 50px;
+  box-shadow: 0 8px 24px rgba(19, 74, 109, 0.35);
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.hero-cta-btn:hover {
+  background-color: var(--email-hover);
+  color: #F8F9FA;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(19, 74, 109, 0.45);
+}
+
 /* Animation */
 @keyframes float {
   0% {
