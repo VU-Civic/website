@@ -837,5 +837,46 @@ td {
   background: radial-gradient(circle at top right, #eef2ff 0%, #ffffff 50%);
   text-align: center;
   flex-direction: column;
-  padding-top: 40px;
+  padding-top: var(--nav-height);
+}
+
+/* App Download Buttons */
+.app-download-section {
+  margin-top: 44px;
+}
+
+.app-download-label {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.app-download-buttons {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.store-badge-link {
+  display: inline-block;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.store-badge-link:hover {
+  transform: translateY(-3px);
+  opacity: 0.85;
+}
+
+.store-badge {
+  height: 54px;
+  width: auto;
+}
+
+.store-badge-google {
+  height: 78px;
 }
