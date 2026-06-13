@@ -828,7 +828,7 @@ td {
   text-decoration: none;
 }
 
-/* App Login */
+/* The App */
 .app-container {
   min-height: calc(100vh - var(--footer-height));
   display: flex;
