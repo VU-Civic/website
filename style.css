@@ -880,3 +880,16 @@ td {
 .store-badge-google {
   height: 78px;
 }
+
+/* Manual callout banner */
+.manual-callout {
+  background: var(--bg-color);
+  border-left: 4px solid var(--accent-color);
+  border-radius: var(--radius-md);
+  padding: 14px 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  font-size: 16px;
+  color: var(--text-muted);
+  text-align: left;
+}
